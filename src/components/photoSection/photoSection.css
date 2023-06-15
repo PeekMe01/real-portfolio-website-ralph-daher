@@ -1,0 +1,25 @@
+.photo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrowDown {
+    font-size: 140px;
+    color: var(--color-secondary);
+}
+
+.wrap {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Test{
+    width: 100px;
+    height: 1000px;
+    background-color: transparent;
+}
