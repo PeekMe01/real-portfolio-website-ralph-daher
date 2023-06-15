@@ -52,7 +52,11 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 96px;
+}
+
+small{
+    font-size: 32px;
 }
 
 section{
@@ -100,14 +104,24 @@ a:hover {
 }
 
 .btn-primary{
-    background: var(--color-primary);
-    color: var(--color-primary-variant);
+    background-color: var(--color-primary-variant);
+    color: var(--color-primary);
+    border: 1px solid var(--color-white);
 }
 
-img{
-    display: block;
-    width: 100%;
-    object-fit: cover;
+
+
+
+.light-yellow {
+    color: var(--color-secondary);
+}
+
+.dark-green {
+    color: var(--color-primary);
+}
+
+.light-green {
+    color: var(--color-primary-variant)
 }
 
 /* ====================== MEDIA QUERIES (MEDIUM DEVICES) ================== */
@@ -119,6 +133,14 @@ img{
     section {
         margin-top: 6rem;
     }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    small {
+        font-size: 20px;
+    }
 }
 
 /* ====================== MEDIA QUERIES (SMALL DEVICES) ================== */
@@ -129,5 +151,13 @@ img{
 
     section > h2 {
         margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    small {
+        font-size: 12px;
     }
 }
