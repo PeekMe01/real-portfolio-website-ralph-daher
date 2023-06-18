@@ -13,25 +13,26 @@ const PhotoSection = () => {
     const vh = window.innerHeight / 100;
     const scrollTop = document.documentElement.scrollTop;
     const start = 100 * vh;
-    const stop = 400 * vh;
+    const stop = 350 * vh;
     if (scrollDirection === 'down' && (scrollTop>start&&scrollTop<stop)) {
       if(opacity>0){
-        setOpacity(()=>opacity-0.02);
+        setOpacity(()=>opacity-0.05);
       }
       if(scale<4){
         setScale(()=>scale+0.05);
       }
     }else
-    if (scrollDirection === 'up' && (scrollTop>start&&scrollTop<200*vh)) {
+    if (scrollDirection === 'up' && (scrollTop>0&&scrollTop<200*vh)) {
       if(opacity<1){
-        setOpacity(()=>opacity+0.02);
+        setOpacity(()=>opacity+0.05);
       }
       if(scale>1){
-        setScale(()=>scale-0.05);
+        setScale(()=>scale-0.1);
       }
     }
   })
-
+  if(window.innerWidth<1024){ return null }
+  else
   return (
     <div className='container photo__container'>
       <Zoom><p className='arrowDown'>&#x2193;</p></Zoom>
