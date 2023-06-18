@@ -1,0 +1,69 @@
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:1rem;
+}
+
+.container__skills{
+    margin-top: 4rem;
+    justify-content: center;
+    display: flex;
+}
+
+.circle{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px var(--color-white) solid;
+}
+
+.skills__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-items: center;
+}
+
+.circle__container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.leftTable, .rightTable {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    width: 100%;
+    padding: 2rem;
+    border-radius: 45px;
+    border: 2px var(--color-white) solid;
+    transition: var(--transition);
+    gap: 1.5rem;
+}
+
+.leftTable:hover, .rightTable:hover {
+    background-color: transparent;
+}
+
+/* ====================== MEDIA QUERIES (s DEVICES) ================== */
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+    .skills__content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .leftTable, .rightTable {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* ====================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+    .skills__content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
