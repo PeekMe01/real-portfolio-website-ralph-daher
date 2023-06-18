@@ -1,3 +1,114 @@
 .container__aboutMe {
-    margin-bottom: 1000px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.AboutMePhoto {
+    border-radius: 60px;
+    border: 2px var(--color-white) solid;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.aboutMe__paragraph{
+    display: flex;
+    margin-top: 15dvh;
+    justify-content:center;
+    gap: 2rem;
+}
+
+.AboutMeText{
+    font-size: 20px;
+    text-align:left;
+}
+
+.aboutMe__icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.aboutMe__card h5{
+    font-size: 0.9rem;
+}
+
+.aboutMe__card small{
+    font-size: 0.7rem;
+    color: var(--color-light)
+}
+
+.aboutMe__card {
+    background: var(--color-secondary);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    height: 12rem;
+    width: 20rem;
+}
+
+.aboutMe__card:hover{
+    background: transparent;
+    border-color: var(--color-secondary);
+    cursor: default;
+}
+
+.aboutMe__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 4rem 0;
+    justify-content: center;
+}
+
+/* ====================== MEDIA QUERIES (s DEVICES) ================== */
+@media screen and (max-width: 1024px) {
+    .aboutMe__paragraph {
+        flex-direction: column;
+    }
+
+    .aboutMe__paragraph > p {
+        text-align: center;
+    }
+
+    .aboutMe__paragraph > img {
+        align-self: center;
+    }
+    .aboutMe__content{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .AboutMePhoto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutMe__paragraph{
+        margin-top: 5dvh;
+    }
+}
+
+/* ====================== MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px) {
+    .aboutMe__paragraph {
+        flex-direction: column;
+    }
+    .aboutMe__paragraph > p {
+        text-align: center;
+    }
+    .aboutMe__paragraph > img {
+        align-self: center;
+    }
+    .aboutMe__content{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .AboutMePhoto {
+        width: 200px;
+        height: 200px;
+    }
 }
