@@ -12,9 +12,10 @@
 }
 
 :root{ /*css variables so we dont repeat ourselves*/
-    --color-primary: #50CEA1;
-    --color-primary-variant: #9DFFCA;
-    --color-secondary: #FBF8BE;
+    --color-primary: #0E1828; /* #50CEA1; */
+    --color-primary-variant: #45689F; /* #9DFFCA; */
+    --color-secondary: #049E98; /* #FBF8BE; */
+    --color-secondary-variant: #073237;
     --color-white: #FFFFFF;
     --color-grey: #D9D9D9;
     --color-light: rgba(255, 255, 255, 0.6);
@@ -45,6 +46,7 @@ body{
 .container{
     width: var(--container-width-lg);
     margin: 0 auto;
+    justify-items: center;
 }
 
 h1, h2, h3, h4, h5{
@@ -53,10 +55,6 @@ h1, h2, h3, h4, h5{
 
 h1{
     font-size: 96px;
-}
-
-small{
-    font-size: 32px;
 }
 
 section{
@@ -89,11 +87,11 @@ a:hover {
 .btn {
     width: max-content;
     display: inline-block;
-    color: var( --color-primary-variant);
+    color: var(--color-secondary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
     cursor: pointer;
-    border: 1px solid var( --color-primary-variant);
+    border: 1px solid var(--color-secondary);
     transition: var(--transition);
 }
 
@@ -104,7 +102,7 @@ a:hover {
 }
 
 .btn-primary{
-    background-color: var(--color-primary-variant);
+    background-color: var(--color-secondary);
     color: var(--color-primary);
     border: 1px solid var(--color-white);
 }
