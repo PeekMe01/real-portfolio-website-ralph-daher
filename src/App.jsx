@@ -8,7 +8,6 @@ import ContactMe from './components/contactMe/ContactMe'
 import Footer from './components/footer/Footer'
 import Navigation from './components/nav/Navigation'
 
-
 const App = () => {
     return(
         <>
