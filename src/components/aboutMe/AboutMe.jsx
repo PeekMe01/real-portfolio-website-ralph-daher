@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './aboutMe.css'
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
@@ -8,13 +8,30 @@ import {AiOutlineTeam} from 'react-icons/ai'
 import {MdOutlineSelfImprovement} from 'react-icons/md'
 
 const AboutMe = () => {
+
+  const [userData, setUserData] = useState({});
+
+  useEffect(() => {
+    // Fetch data from the PHP file
+    fetch('../../classes/aboutme.classes.php')
+      .then(response => response.json())
+      .then(result => {
+        setUserData(result);
+        console.log(result);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []);
+
   return (
     <section id='about'>
       <div className='container container__aboutMe'>
         <Zoom>
           <h5 className='text-light'>Get To Know Me</h5>
           <h2>About Me</h2>
-        
+          {/* {userData} */}
+
         <article className='aboutMe__paragraph'>
           <Fade>
             <img className='AboutMePhoto' src={IMG} alt="AboutMePhoto"/>
