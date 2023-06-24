@@ -24,6 +24,22 @@ app.get('/about_me', (req, res)=> {
     })
 })
 
+app.get('/skills', (req, res)=> {
+    const sql = 'SELECT * FROM skills;'
+    db.query(sql, (err, data)=> {
+        if(err) return res.json(err);
+        return res.json(data);
+    })
+})
+
+app.get('/projects', (req, res)=> {
+    const sql = 'SELECT * FROM projects;'
+    db.query(sql, (err, data)=> {
+        if(err) return res.json(err);
+        return res.json(data);
+    })
+})
+
 app.listen(8081, ()=> {
     console.log("listening");
 });
