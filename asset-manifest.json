@@ -1,24 +1,18 @@
 {
   "files": {
-    "main.css": "/real-portfolio-website-ralph-daher/static/css/main.0082e26b.css",
-    "main.js": "/real-portfolio-website-ralph-daher/static/js/main.2a1af63e.js",
-    "static/media/project5.png": "/real-portfolio-website-ralph-daher/static/media/project5.8a1a850f64c661fa3c60.png",
+    "main.css": "/real-portfolio-website-ralph-daher/static/css/main.23af91f6.css",
+    "main.js": "/real-portfolio-website-ralph-daher/static/js/main.7375c36b.js",
     "static/media/MyResume.zip": "/real-portfolio-website-ralph-daher/static/media/MyResume.29f4c4838aff3fd39720.zip",
     "static/media/About Me Picture.jpg": "/real-portfolio-website-ralph-daher/static/media/About Me Picture.d3a96814756fed9b6b22.jpg",
-    "static/media/project2.png": "/real-portfolio-website-ralph-daher/static/media/project2.977e51b7d1729307e400.png",
-    "static/media/project3.png": "/real-portfolio-website-ralph-daher/static/media/project3.a08e9bde6870c0812b2e.png",
-    "static/media/project4.png": "/real-portfolio-website-ralph-daher/static/media/project4.03f6c7b7bd0e4750c80f.png",
     "static/media/portal.png": "/real-portfolio-website-ralph-daher/static/media/portal.a8fa885b2d4b3fd7f368.png",
-    "static/media/project1.png": "/real-portfolio-website-ralph-daher/static/media/project1.41640b4d2f30b262aa35.png",
     "static/media/Profile Pic.jpg": "/real-portfolio-website-ralph-daher/static/media/Profile Pic.9158c3609ee31bbcfb62.jpg",
     "static/media/Logo.png": "/real-portfolio-website-ralph-daher/static/media/Logo.37ace3ab672b8762d894.png",
-    "static/media/project6.png": "/real-portfolio-website-ralph-daher/static/media/project6.54e0b6eef900cb64b61c.png",
     "index.html": "/real-portfolio-website-ralph-daher/index.html",
-    "main.0082e26b.css.map": "/real-portfolio-website-ralph-daher/static/css/main.0082e26b.css.map",
-    "main.2a1af63e.js.map": "/real-portfolio-website-ralph-daher/static/js/main.2a1af63e.js.map"
+    "main.23af91f6.css.map": "/real-portfolio-website-ralph-daher/static/css/main.23af91f6.css.map",
+    "main.7375c36b.js.map": "/real-portfolio-website-ralph-daher/static/js/main.7375c36b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0082e26b.css",
-    "static/js/main.2a1af63e.js"
+    "static/css/main.23af91f6.css",
+    "static/js/main.7375c36b.js"
   ]
 }
