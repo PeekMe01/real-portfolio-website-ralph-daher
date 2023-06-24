@@ -9,15 +9,15 @@ import {MdOutlineSelfImprovement} from 'react-icons/md'
 
 const AboutMe = () => {
 
-  const [userData, setUserData] = useState({});
+  const [userData, setUserData] = useState([{about_me_text: ''}]);
 
   useEffect(() => {
     // Fetch data from the PHP file
-    fetch('../../classes/aboutme.classes.php')
+    fetch('http://localhost:8081/about_me')
       .then(response => response.json())
       .then(result => {
         setUserData(result);
-        console.log(result);
+        console.log(result[0].about_me_text);
       })
       .catch(error => {
         console.error('Error:', error);
@@ -30,14 +30,12 @@ const AboutMe = () => {
         <Zoom>
           <h5 className='text-light'>Get To Know Me</h5>
           <h2>About Me</h2>
-          {/* {userData} */}
 
         <article className='aboutMe__paragraph'>
           <Fade>
             <img className='AboutMePhoto' src={IMG} alt="AboutMePhoto"/>
             <p className='AboutMeText'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div>{userData[0].about_me_text}</div>
             </p>
           </Fade>
         </article>
