@@ -1,8 +1,13 @@
 .skillContainer {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    gap:1rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.top__text{
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
 .container__skills{
